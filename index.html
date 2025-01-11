@@ -1,24 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Login Page</title>
-</head>
-<body>
-    <div class="login-container">
-        <center>
-        <img src="assets/dino.gif" alt=""gift>
-        <h5>GIVE ME YOUR NAME</h5>
-        <form id="loginForm">
-            <label for="username"></label>
-            <input type="text" id="username" name="username" required>
-            <button type="button" onclick="checkLogin()">ok</button>
-        </form>
-    </center>
-    </div> 
+<html lang="id">
 
-    <script src="script.js"></script>
-</body>
-</html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ucapan Spesial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css" rel="stylesheet" />
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet" />
+    <script
+        src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000"
+        data-border-radius="small"></script>
+</head>
+
+<body class="bg-purple-50 min-h-screen">
+    <div id="landing-page" class="min-h-screen flex items-center justify-center">
+        <div class="max-w-md w-full mx-auto p-8 bg-white rounded-xl shadow-xl border border-purple-100">
+            <h1 class="text-3xl font-bold text-center text-custom mb-8">selamat ulangtahun beyy</h1>
+            <form id="nameForm" class="space-y-6">
+                <div>
+                    <input type="text" id="nameInput"
+                        class="w-full p-3 border border-purple-200 rounded-lg focus:outline-none focus:border-purple-400"
+                        placeholder="masukkan namna pacar anda" />
+                </div>
+                <button type="submit"
+                    class="w-full bg-purple-500 text-white py-3 rounded-lg hover:bg-purple-600 transition duration-300">
+                    Masuk
+                </button>
+            </form>
+        </div>
+    </div>
+    <div id="iqbal-page" class="hidden min-h-screen flex items-center justify-center bg-purple-50">
+        <div class="text-center p-8">
+            <h2 class="text-4xl font-bold text-purple-600 mb-6">Maap Iqbal Bukan Lagi Pacarmu</h2>
+            <p class="text-gray-600 mb-8">Pake Nama Km Ja Gin Sayang e "Nama Asli Lh heheheh"</p>
+            <button onclick="showLandingPage()"
+                class="bg-purple-500 text-white px-6 py-3 rounded-lg hover:bg-purple-600 transition duration-300">
+                Kembali
+            </button>
+        </div>
+    </div>
+
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <h1 class="text-4xl font-dancing text-custom text-center">Happy Birthday Nia Sari! 🎉</h1>
+        </div>
+    </header>
+
+    <div id="birthday-page" class="hidden">
+        <div class="relative">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="/foto/07.jpg" class="w-full h-[600px] object-cover" alt="Birthday Moment 1" />
+                        </li>
+                        <li class="glide__slide">
+                            <img src="/foto/03.jpg" class="w-full h-[600px] object-cover" alt="Birthday Moment 2" />
+                        </li>
+                        <li class="glide__slide">
+                            <img src="/foto/04.jpg" class="w-full h-[600px] object-cover" alt="Birthday Moment 3" />
+                        </li>
+                        <li class="glide__slide">
+                            <img src="/foto/05.jpg" class="w-full h-[600px] object-cover" alt="Birthday Moment 4" />
+                        </li>
+                        <li class="glide__slide">
+                            <img src="/foto/06.jpg" class="w-full h-[600px] object-cover" alt="Birthday Moment 5" />
+                        </li>
+                        <li class="glide__slide">
+                            <img src="/foto/12.jpg" class="w-full h-[600px] object-cover" alt="Birthday Moment 5" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                    <button class="glide__bullet" data-glide-dir="=4"></button>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 py-12">
+            <div class="max-w-7xl mx-auto px-4 mt-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="/foto/01.jpg" class="w-full h-64 object-cover" alt="Birthday Celebration">
+                        <div class="p-6">
+                            <p class="text-gray-600">Selamat ulang tahun, beyy! Hari-hari bersamamu
+                                terasa seperti mimpi baru saja mualai sudah berakhir.
+                                Aku langsung tahu kalau km adalah orang spesial. Sejak saat itu,
+                                hidupku berubah menjadi lebih berwarna. Terima kasih telah
+                                menjadi bagian dari hidupku.
+                                aku ada tebak-tebakan gasan km burung 10 di atas pohon
+                                di tembak satu sisa berapa burung di atas pohon ? heheheheh
+                                selalu ada untukku saat aku membutuhkan.
+                                Terima kasih sudah menjadi teman sekaligus pacarku.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="/foto/08.jpg" class="w-full h-64 object-cover" alt="Friends Celebration">
+                        <div class="p-6">
+                            <p class="text-gray-600">Sayang, di hari spesialmu ini, aku ingin kamu tahu betapa
+                                beruntungnya aku pernah memiliki km. Km adalah cahaya dalam hidupku,
+                                semangatku, dan cinta sejatiku. Terima kasih telah selalu ada untukku.
+                                Semoga hari-harimu selalu dipenuhi dengan kebahagiaan dan cinta, di saat aku betamuan
+                                dengan km
+                                semua masalah yang ada dipikiran ku hilang, aku merasa bahagia, merasa nyaman. Selamat
+                                ulang tahun,
+                                beyy </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="/foto/09.jpg" class="w-full h-64 object-cover" alt="Birthday Gifts">
+                        <div class="p-6">
+                            <p class="text-gray-600">Aku berharap hari ulang tahunmu
+                                kali ini menjadi hari yang paling berkesan.
+                                Semoga kamu dikelilingi oleh orang-orang yang menyayangimu,
+                                dan mendapatkan semua hal yang kamu inginkan.
+                                Aku mencintaimu lebih dari kata-kata yang bisa ku ungkapkan.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="/foto/10.jpg" class="w-full h-64 object-cover" alt="Birthday Cupcakes">
+                        <div class="p-6">
+                            <p class="text-gray-600">ingat beyy aku selalu sayang dengan ikm,
+                                aku masih mengharapkan ikm, semoga kita bersam lagi ya...... aminin dong hehehehe
+                                <br>
+                                andai semuanya kenangan yang sdh kita laluin dapat di Ctrl + Z !
+
+                                <br>
+                                klu bisa pencetin ya
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="/foto/11.jpg" class="w-full h-64 object-cover" alt="Birthday Decorations">
+                        <div class="p-6">
+                            <p class="text-gray-600">do'a gasan km semoga km panjang umur,
+                                sehat badan, lancar terus rezekinya,
+                                taat terus lwn allah, semoga di sayang papa dan mama,
+                                jujur aku juga syang ke ikm heheheh</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="/foto/13.jpg" class="w-full h-64 object-cover" alt="Birthday Decorations">
+                        <div class="p-6">
+                            <p class="text-gray-600">Aku ingin mengucapkan terima
+                                kasih atas semua waktu yang kita habiskan bersama.
+                                Kamu telah mengajariku banyak hal dan menjadi bagian
+                                penting dalam hidupku. Meski km sdh kd cinta lgi lwn aku,
+                                aku tetap cinta tetap sayang lwn km,
+                                aku berharap kamu selalu bahagia.
+                                Selamat ulang tahun! Semoga segala mimpi
+                                dan cita-citamu terwujud.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 flex justify-center space-x-6">
+                    <a href="https://drive.google.com/file/d/1IhqK82-6lQgUhNILauKaVDntWrxoQfDj/view?usp=drive_link"
+                        target="_blank"
+                        class="inline-flex items-center px-6 py-3 bg-custom text-white font-semibold !rounded-button hover:bg-custom/90 transition-colors">
+                        <i class="fab fa-google-drive mr-2"></i>
+                        kenangan semua ada di sini
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <audio id="bgMusic" loop="">
+        <source src="/foto/cinta.mp3" type="audio/mpeg" />
+    </audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
+    <script>
+        const landingPage = document.getElementById('landing-page');
+        const iqbalPage = document.getElementById('iqbal-page');
+        const birthdayPage = document.getElementById('birthday-page');
+        const nameForm = document.getElementById('nameForm');
+        const nameInput = document.getElementById('nameInput');
+        const bgMusic = document.getElementById('bgMusic');
+        const musicIcon = document.getElementById('musicIcon');
+        let isMusicPlaying = false;
+        new Glide('.glide', {
+            type: 'carousel',
+            autoplay: 3000,
+            hoverpause: false,
+            animation: {
+                duration: 1000
+            }
+        }).mount();
+        nameForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = nameInput.value.toLowerCase().trim();
+
+            if (name === 'iqbal') {
+                landingPage.classList.add('hidden');
+                iqbalPage.classList.remove('hidden');
+                birthdayPage.classList.add('hidden');
+            } else if (name === 'nia sari') {
+                landingPage.classList.add('hidden');
+                iqbalPage.classList.add('hidden');
+                birthdayPage.classList.remove('hidden');
+                playMusic();
+            }
+        });
+        function showLandingPage() {
+            landingPage.classList.remove('hidden');
+            iqbalPage.classList.add('hidden');
+            birthdayPage.classList.add('hidden');
+            pauseMusic();
+        }
+        function toggleMusic() {
+            if (isMusicPlaying) {
+                pauseMusic();
+            } else {
+                playMusic();
+            }
+        }
+        function playMusic() {
+            bgMusic.play();
+            isMusicPlaying = true;
+            musicIcon.classList.remove('fa-music');
+            musicIcon.classList.add('fa-pause');
+        }
+        function pauseMusic() {
+            bgMusic.pause();
+            isMusicPlaying = false;
+            musicIcon.classList.remove('fa-pause');
+            musicIcon.classList.add('fa-music');
+        }
+    </script>
